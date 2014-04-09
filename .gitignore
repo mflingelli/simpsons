@@ -1,1 +1,14 @@
 .svn/
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.ind.*
+*.log
+*.out
+*.pdf
+*.toc
+*.tps
