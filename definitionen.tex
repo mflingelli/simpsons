@@ -1,0 +1,22 @@
+\newcommand{\HTMLOutput}[2]{
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+  \pdffalse % we are not running PDFLaTeX
+\else % we are running PDFLaTeX
+  \ifnum \pdfoutput=0
+    \pdffalse % HTML- bzw. Postscript
+    #1
+  \else
+    \ifnum\pdfoutput=1 % PDF
+    \pdftrue
+    #2
+    \fi
+  \fi
+\fi
+}
+
+\newcommand{\befehl}[1]{\ttfamily #1\rm}
+
+\newcommand{\dateiendung}[1]{\sf #1\rm}
+
+\newcommand{\datei}[1]{\sf #1\rm}

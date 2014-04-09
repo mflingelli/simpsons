@@ -1,0 +1,280 @@
+% Den Titel der Helloween-Folge der 13. Staffel überprüfen
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\documentclass[german,a4paper,twoside]{book}
+%\documentclass[german,a4paper,twoside]{scrbook}
+%\usepackage[dvips,german,all,light,portrait]{draftcopy}
+\documentclass[pagesize,german]{scrbook}
+\usepackage[a4paper,head=2cm,bottom=2cm,left=25mm,right=25mm]{geometry}
+\usepackage{babel}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage{graphics, graphicx}
+\usepackage{longtable} 
+%\usepackage{rotating}
+%\usepackage[bookmarks,colorlinks,bookmarksnumbered,final,backref]{hyperref}
+\usepackage[pagebackref,pdfpagelabels,bookmarksnumbered,hyperindex]{hyperref}
+\usepackage{bibgerm}
+\usepackage{url}
+\usepackage{color} % Paket für verschiedene Farben
+\usepackage{eso-pic}
+\definecolor{lightgray}{gray}{.85}
+%\usepackage{floatflt}
+\usepackage{quotchap}
+\usepackage{listings}
+\usepackage{soul}
+
+\input{definitionen}
+
+\newcommand{\staffelAnzahl}{23}
+\newcommand{\episodenAnzahl}{508}
+
+\makeindex
+
+\author{Markus Flingelli}
+\date{\today}
+
+\HTMLOutput{
+}
+{
+ \AddToShipoutPicture{%
+ \AtTextCenter{%
+ \makebox(0,0)[c]{\resizebox{\textwidth}{!}{%
+ \rotatebox{22.5}{\textsf{\textbf{\color{lightgray}Entwurf}}}}}
+  }
+}
+}
+
+\title{\LARGE Hier sind die Simpsons}
+       
+  \thispagestyle{empty}
+  \vspace*{-10ex}
+
+
+\newcommand{\notiz}[1]{
+\vspace{.3cm}
+\textbf{Notiz: }~\emph{#1}
+}
+
+\newcommand{\kommentar}[1]{
+%#1
+}
+\parindent0cm
+\setlength{\headheight}{15pt}
+
+\newenvironment{lyricquote}{\begin{quote}\normalsize\itshape}
+													 {\end{quote}} 
+
+\definecolor{eclipseKeywordColor}{RGB}{127,  0, 85}
+\definecolor{eclipseCommentColor}{RGB}{ 63, 95,191}
+
+\lstset{
+	keywordstyle=\ttfamily\color{eclipseKeywordColor}\bfseries, 
+	commentstyle=\ttfamily\color{eclipseCommentColor}, 
+	stringstyle=\ttfamily,
+	numberstyle=\normalsize, 
+	basicstyle=\normalsize\ttfamily, 
+	showstringspaces=false, 
+	breaklines=true, 
+	language=C
+}
+
+\begin{document}
+
+\setcounter{page}{1}      % Das Inhaltsverzeichnis wird römisch numeriert
+\pagenumbering{roman}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+%\fancyfoot[LE,RO]{\bfseries \today}
+\fancyfoot[C]{}
+%\fancyfoot[RE]{\bfseries Release Candidate}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+\phantomsection
+\pdfbookmark[0]{Titelseite}{Titelseite}
+
+
+\HTMLOutput{}
+{
+  \hypersetup{%
+  pdftitle = {Hier sind die Simpsons},
+  pdfsubject = {Simpsons},
+  pdfkeywords = {Simpsons, Homer, Bart, Marge, Maggie, Lisa, Springfield},
+  pdfauthor = {\textcopyright\ Markus Flingelli, 2005 - 2014},
+  pdfcreator = {\LaTeX\ u.a. mit dem Paket \flqq hyperref\frqq},
+  pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision},
+  }
+}
+
+  
+\HTMLOutput{
+\maketitle
+}
+{
+\vspace*{3ex}
+
+\begin{flushleft}
+  \Huge\textbf{\sffamily Hier sind die Simpsons}\\
+  \rule{\linewidth}{5pt}
+  \vspace{1ex}
+  \large\textbf{\sffamily 7. überarbeitete Ausgabe}
+\end{flushleft}
+
+\vspace*{18cm} 
+
+\begin{flushright}
+  \large\textbf{\sffamily Markus Flingelli\\}
+  \small\sffamily\href{mailto:Markus.Flingelli@gmx.de}{Markus.Flingelli@gmx.de}
+\end{flushright}
+
+\newpage
+}
+
+\phantomsection
+\pdfbookmark[0]{Vorwort}{Vorwort}
+
+\section*{Vorwort}
+In diesem Werk habe ich Informationen rund um die Fernsehfamlie \glqq Die Simpsons\grqq\ zusammengefasst. Diese Zusammenstellung beinhaltet zum einen eine Beschreibung der wichtigsten Charaktere der Serie und eine kurze Zusammenfassung aller \episodenAnzahl\ Folgen der Staffeln 1 bis \staffelAnzahl . Neben der Beschreibung jeder einzelnen Folge werden Hintergrundinformationen zu den Episoden gegeben. Im Anhang befinden sich Listen mit der Staffelübersicht, den Tafelgags, den Gaststars und den Synchronsprechern. Im Anhang wird ferner die oft kontrovers diskutierte Frage beantwortet, in welchem Bundesstaat der USA sich eigentlich die Stadt Springfield, in der die Simpsons leben, befindet. 
+
+Diese Zusammenfassung und die Listen erheben weder den Anspruch auf Voll\-stän\-dig\-keit noch auf Fehlerfreiheit. Sollten Sie Verbesserungsvorschläge oder Er\-gänz\-un\-gen haben, würde ich mich freuen, wenn Sie mir diese mitteilen würden. Wenn Sie Fehler entdecken, wäre ich ebenso für eine Korrektur dankbar.
+
+Dieses Werk soll sowohl für den \glqq Simpson-Einsteiger\grqq\ geeignet sein, als auch dem \glqq Simpsons-Kenner\grqq\ durchaus noch neue Erkenntnisse bieten können.
+
+Bei der Recherche für dieses Buch bediente ich mich der im Literaturverzeichnis angegebenen Quellen. Die hier dargestellten Angaben gehen nicht auf die Simpsons-Comics ein. Als Grundlage dieses Buches dienen lediglich die Trickfilme bis einschließlich Staffel \staffelAnzahl\ und der Kinofilm \glqq Simpsons -- Der Film\grqq . 
+
+\subsection*{}
+\HTMLOutput{
+Gilching, \today , Markus Flingelli
+}
+{
+Gilching, \today \hfill Markus Flingelli
+}
+
+
+\section*{Änderungshinweise}
+
+
+\subsection*{Änderungen zur Ausgabe vom 28.08.2013}
+\begin{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{MoeSzyslak}, \ref{8F08}, \ref{8F09} und \ref{8F16}.
+\end{itemize}
+
+\subsection*{Änderungen zur Ausgabe vom 01.07.2012}
+\begin{itemize}
+\item Einarbeiten der 23. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{LennyLeonard}, \ref{NahasapeemapetilonSanjay}, \ref{MoeSzyslak}, \ref{JeremyPeterson}, \ref{HerkunftNamen}, \ref{7F17}, \ref{AABF04}, \ref{BABF11}, \ref{DABF10}, \ref{SimpsonsIT} und \ref{ItchyAndScratchy}.
+\end{itemize}
+
+\subsection*{Änderungen zur Ausgabe vom 31.07.2011}
+\begin{itemize}
+\item Einarbeiten der 22. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{SelmaBouvier}, \ref{CMBurns}, \ref{LennyLeonard}, \ref{CarlCarlson}, \ref{Krabappel}, \ref{DeweyLargo}, \ref{GaryChalmers}, \ref{OttoMan}, \ref{NelsonMuntz}, \ref{HerschelKrustofski}, \ref{ChiefWiggum}, \ref{JohnFrink}, \ref{ArtieZiff},\ref{LABF13}, \ref{ExistiertSpringfield}, \ref{SimpsonsIT} und \ref{ItchyAndScratchy}.
+\end{itemize}
+
+\subsection*{Änderungen zur Ausgabe vom 21.08.2010}
+\begin{itemize}
+\item Einarbeiten der 21. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{HomerSimpson}, \ref{JacquelineBouvier}, \ref{CMBurns}, \ref{LennyLeonard}, \ref{CarlCarlson}, \ref{MelvinVanHorne}, \ref{Booberella}, \ref{AgnesSkinner}, \ref{JeffAlbertson}, \ref{ZahnfleischbluterMurphy}, \ref{7G05}, \ref{3F04}, \ref{3F05}, \ref{5F21}, \ref{AABF20}, \ref{ExistiertSpringfield}, \ref{SimpsonsIT}, \ref{ItchyAndScratchy}, \ref{Auszeichnungen} und \ref{CProgramme}.
+\end{itemize}
+
+\subsection*{Änderungen zur Ausgabe vom 25.04.2009}
+\begin{itemize}
+  \item Einarbeiten der 20. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{HomerSimpson}, \ref{MargeSimpson}, \ref{BartSimpson}, \ref{LisaSimpson}, \ref{MaggieSimpson}, \ref{AbeSimpson}, \ref{CMBurns}, \ref{LennyLeonard}, \ref{CarlCarlson}, \ref{GaryChalmers}, \ref{Willie}, \ref{MelvinVanHorne}, \ref{AgnesSkinner}, \ref{JeffAlbertson}, \ref{TimothyLovejoy}, \ref{MoeSzyslak}, \ref{JasperBeardley}, \ref{7G04}, \ref{4F09}, \ref{CABF15}, \ref{KABF08}, \ref{Werbegags}, \ref{ItchyAndScratchy} und \ref{Auszeichnungen}.
+\end{itemize}
+
+
+\subsection*{Änderungen zur Ausgabe vom 05.04.2008}
+\begin{itemize}
+  \item Einarbeiten der 19. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{Charaktere}, \ref{HomerSimpson}, \ref{LisaSimpson}, \ref{MonaSimpson}, \ref{CMBurns}, \ref{LennyLeonard},  \ref{CarlCarlson}, \ref{SeymourSkinner}, \ref{GaryChalmers}, \ref{MartinPrince}, \ref{SideshowBob}, \ref{MelvinVanHorne}, \ref{RainierWolfcastle}, \ref{Lou}, \ref{AgnesSkinner}, \ref{GilGunderson}, \ref{HansMaulwurf}, \ref{TimothyLovejoy}, \ref{LuannVanHouten}, \ref{MoeSzyslak}, \ref{LindseyNaegle}, \ref{ReicherTexaner}, \ref{9F21}, \ref{1F19}, \ref{1F21}, \ref{3F22}, \ref{4F14}, \ref{CABF19}, \ref{DABF16}, \ref{FABF13}, \ref{GABF19}, \ref{HABF02}, \ref{JABF15}, \ref{Gaststars17}, \ref{ItchyAndScratchy}, \ref{SimpsonsFilmAuszeichnungen}, \ref{Synchronsprecher} und \ref{Auszeichnungen}.
+\end{itemize}
+
+\subsection*{Änderungen zur Ausgabe vom 19.01.2008}
+\begin{itemize}
+	\item Einarbeiten der 18. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+	\end{itemize}
+	\item Einarbeiten des Simpson Films
+	\item Ergänzungen in folgenden Abschnitten: \ref{Charaktere}, \ref{AbeSimpson}, \ref{SelmaBouvier}, \ref{LennyLeonard}, \ref{GaryChalmers}, \ref{JimboJones}, \ref{KearneyZzyzwicz}, \ref{DolphStarbeam}, \ref{RainierWolfcastle}, \ref{ArniePye}, \ref{ApuNahasapeemapetilon}, \ref{FatTony}, \ref{GilGunderson}, \ref{HansMaulwurf}, \ref{JohnFrink} \ref{EleanorAbernathy}, \ref{JeremyPeterson}, \ref{HerkunftNamen}, \ref{7F15}, \ref{3F10}, \ref{3F18}, \ref{3F20}, \ref{3F22}, \ref{4F04}, \ref{4F06}, \ref{AABF23}, \ref{ItchyAndScratchy} und \ref{Auszeichnungen}
+\end{itemize}
+
+\newpage
+
+\HTMLOutput{}
+{\pdfbookmark[0]{Inhaltsverzeichnis}{Inhalt}}
+
+\tableofcontents
+
+~\newpage
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\input{Kapitel1/Kapitel1.tex}
+\input{Kapitel2/Kapitel2.tex}
+\input{Anhang/Anhang.tex}
+
+\HTMLOutput{}
+{
+~\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+}
+\bibliographystyle{geralpha}
+\bibliography{Simpsons}
+
+\HTMLOutput{}
+{
+~\newpage
+\phantomsection
+\pdfbookmark[0]{Index}{Index}
+\printindex
+}
+
+
+\end{document}
