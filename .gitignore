@@ -12,3 +12,5 @@
 *.pdf
 *.toc
 *.tps
+*.tmp
+*.bat
