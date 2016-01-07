@@ -99,6 +99,8 @@
 %\fancyfoot[RE]{\bfseries Release Candidate}
 %\renewcommand{\footrulewidth}{0.4pt}
 
+\def\datengerman{\def\today{\ifnum\day<10 0\fi\number\day.\ifnum\month<10 0\fi\number\month.\number\year}}
+
 \phantomsection
 \pdfbookmark[0]{Titelseite}{Titelseite}
 
@@ -109,7 +111,7 @@
   pdftitle = {Hier sind die Simpsons},
   pdfsubject = {Simpsons},
   pdfkeywords = {Simpsons, Homer, Bart, Marge, Maggie, Lisa, Springfield},
-  pdfauthor = {\textcopyright\ Markus Flingelli, 2005 - 2014},
+  pdfauthor = {\textcopyright\ Markus Flingelli, 2005 - \the\year},
   pdfcreator = {\LaTeX\ u.a. mit dem Paket \flqq hyperref\frqq},
   pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision},
   }
@@ -161,6 +163,19 @@ Memmingen, \today \hfill Markus Flingelli
 
 
 \section*{Änderungshinweise}
+
+\subsection*{Änderungen zur Ausgabe vom 15.08.2015}
+\begin{itemize}
+	\item Einarbeiten der 26. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten:.
+\end{itemize}
 
 \subsection*{Änderungen zur Ausgabe vom 24.08.2014}
 \begin{itemize}
