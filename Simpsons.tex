@@ -25,6 +25,7 @@
 \usepackage{listings}
 \usepackage{soul}
 \usepackage{alltt}
+\usepackage{afterpage}
 
 \input{definitionen}
 
@@ -48,10 +49,10 @@
 %}
 %}
 
-\title{\LARGE Hier sind die Simpsons}
-       
-  \thispagestyle{empty}
-  \vspace*{-10ex}
+\title{Hier sind die Simpsons}
+
+\thispagestyle{empty}
+\vspace*{-10ex}
 
 
 \newcommand{\notiz}[1]{
@@ -70,6 +71,7 @@
 
 \definecolor{eclipseKeywordColor}{RGB}{127,  0, 85}
 \definecolor{eclipseCommentColor}{RGB}{ 63, 95,191}
+\definecolor{titleColor}{RGB}{255,217,15}
 
 \lstset{
 	keywordstyle=\ttfamily\color{eclipseKeywordColor}\bfseries, 
@@ -123,20 +125,14 @@
 }
 {
 \vspace*{3ex}
-
+\pagecolor{titleColor}\afterpage{\nopagecolor}
+\vspace*{8cm}
 \begin{flushleft}
-  \Huge\textbf{\sffamily Hier sind die Simpsons}\\
-  \rule{\linewidth}{5pt}
-  \vspace{1ex}
-  \large\textbf{\sffamily 10. überarbeitete Ausgabe}
+  \Huge\textcolor{white}{\textbf{\sffamily Hier sind die Simpsons}}\\
+  \textcolor{white}{\rule{\linewidth}{4pt}}
+  \vspace{2ex}
+  \huge\textcolor{white}{\textbf{\sffamily 10. überarbeitete Ausgabe}}
 \end{flushleft}
-
-\vspace*{18cm} 
-
-\begin{flushright}
-  \large\textbf{\sffamily Markus Flingelli\\}
-  \small\sffamily\href{mailto:Markus.Flingelli@gmx.de}{Markus.Flingelli@gmx.de}
-\end{flushright}
 
 \newpage
 }
@@ -328,5 +324,6 @@ Memmingen, \today \hfill Markus Flingelli
 \printindex
 }
 
+\input{lastpage.tex}
 
 \end{document}
