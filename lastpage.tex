@@ -1,4 +1,10 @@
 \makeatletter
+\ifthispageodd{
+  }{
+    \newpage
+    \null
+  }
+  \clearpage
   \newpage
   \thispagestyle{empty}
   \pagecolor{titleColor}\afterpage{\nopagecolor}
