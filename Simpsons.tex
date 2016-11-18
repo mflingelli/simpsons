@@ -1,9 +1,5 @@
-% Den Titel der Helloween-Folge der 13. Staffel überprüfen
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-%\documentclass[german,a4paper,twoside]{book}
-%\documentclass[german,a4paper,twoside]{scrbook}
-%\usepackage[dvips,german,all,light,portrait]{draftcopy}
 \documentclass[pagesize,german]{scrbook}
 \usepackage[a4paper,head=2cm,bottom=2cm,left=25mm,right=25mm]{geometry}
 \usepackage{babel}
@@ -12,15 +8,12 @@
 \usepackage[latin1]{inputenc}
 \usepackage{graphics, graphicx}
 \usepackage{longtable} 
-%\usepackage{rotating}
-%\usepackage[bookmarks,colorlinks,bookmarksnumbered,final,backref]{hyperref}
 \usepackage[pagebackref,pdfpagelabels,bookmarksnumbered,hyperindex]{hyperref}
 \usepackage{bibgerm}
 \usepackage{url}
-\usepackage{color} % Paket für verschiedene Farben
+\usepackage{color}
 \usepackage{eso-pic}
 \definecolor{lightgray}{gray}{.85}
-%\usepackage{floatflt}
 \usepackage{quotchap}
 \usepackage{listings}
 \usepackage{soul}
@@ -39,19 +32,7 @@
 \author{Markus Flingelli}
 \date{\today}
 
-%\HTMLOutput{
-%}
-%{
-% \AddToShipoutPicture{%
-% \AtTextCenter{%
-% \makebox(0,0)[c]{\resizebox{\textwidth}{!}{%
-% \rotatebox{22.5}{\textsf{\textbf{\color{lightgray}Entwurf}}}}}
-%  }
-%}
-%}
-
 \title{Hier sind die Simpsons}
-
 \thispagestyle{empty}
 \vspace*{-10ex}
 
@@ -87,7 +68,7 @@
 
 \begin{document}
 
-\setcounter{page}{1}      % Das Inhaltsverzeichnis wird römisch numeriert
+\setcounter{page}{1}
 \pagenumbering{roman}
 
 \pagestyle{fancy}
@@ -97,10 +78,7 @@
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyhead[LO]{\bfseries\rightmark}
 \fancyhead[RE]{\bfseries\leftmark}
-%\fancyfoot[LE,RO]{\bfseries \today}
 \fancyfoot[C]{}
-%\fancyfoot[RE]{\bfseries Release Candidate}
-%\renewcommand{\footrulewidth}{0.4pt}
 
 \def\datengerman{\def\today{\ifnum\day<10 0\fi\number\day.\ifnum\month<10 0\fi\number\month.\number\year}}
 
@@ -132,7 +110,7 @@
   \Huge\textcolor{blue}{\textbf{\sffamily Hier sind die Simpsons}}\\
   \textcolor{blue}{\rule{\linewidth}{4pt}}
   \vspace{2ex}
-  \huge\textcolor{blue}{\textbf{\sffamily 10. überarbeitete Ausgabe}}
+  \huge\textcolor{blue}{\textbf{\sffamily 10. überarbeitete Ausgabe (Entwurf)}}
 \end{flushleft}
 
 \newpage
