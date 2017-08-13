@@ -1,9 +1,5 @@
-% Den Titel der Helloween-Folge der 13. Staffel überprüfen
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-%\documentclass[german,a4paper,twoside]{book}
-%\documentclass[german,a4paper,twoside]{scrbook}
-%\usepackage[dvips,german,all,light,portrait]{draftcopy}
 \documentclass[pagesize,german]{scrbook}
 \usepackage[a4paper,head=2cm,bottom=2cm,left=25mm,right=25mm]{geometry}
 \usepackage{babel}
@@ -12,46 +8,33 @@
 \usepackage[latin1]{inputenc}
 \usepackage{graphics, graphicx}
 \usepackage{longtable} 
-%\usepackage{rotating}
-%\usepackage[bookmarks,colorlinks,bookmarksnumbered,final,backref]{hyperref}
 \usepackage[pagebackref,pdfpagelabels,bookmarksnumbered,hyperindex]{hyperref}
 \usepackage{bibgerm}
 \usepackage{url}
-\usepackage{color} % Paket für verschiedene Farben
+\usepackage{color}
 \usepackage{eso-pic}
-\definecolor{lightgray}{gray}{.85}
-%\usepackage{floatflt}
 \usepackage{quotchap}
 \usepackage{listings}
 \usepackage{soul}
 \usepackage{alltt}
+\usepackage{afterpage}
+\usepackage{scrextend}
 
 \input{definitionen}
 
-\newcommand{\staffelAnzahl}{26}
-\newcommand{\episodenAnzahl}{574}
+\newcommand{\staffelAnzahl}{27}
+\newcommand{\episodenAnzahl}{596}
 \newcommand{\emmyAnzahl}{29}
 
 \makeindex
 
 \author{Markus Flingelli}
-\date{\today}
+%\date{\today}
+\date{13.08.2017}
 
-%\HTMLOutput{
-%}
-%{
-% \AddToShipoutPicture{%
-% \AtTextCenter{%
-% \makebox(0,0)[c]{\resizebox{\textwidth}{!}{%
-% \rotatebox{22.5}{\textsf{\textbf{\color{lightgray}Entwurf}}}}}
-%  }
-%}
-%}
-
-\title{\LARGE Hier sind die Simpsons}
-       
-  \thispagestyle{empty}
-  \vspace*{-10ex}
+\title{Hier sind die Simpsons}
+\thispagestyle{empty}
+\vspace*{-10ex}
 
 
 \newcommand{\notiz}[1]{
@@ -67,9 +50,10 @@
 
 \newenvironment{lyricquote}{\begin{quote}\normalsize\itshape}
 													 {\end{quote}} 
-
+\definecolor{lightgray}{gray}{.85}
 \definecolor{eclipseKeywordColor}{RGB}{127,  0, 85}
 \definecolor{eclipseCommentColor}{RGB}{ 63, 95,191}
+\definecolor{titleColor}{RGB}{255,217,15}
 
 \lstset{
 	keywordstyle=\ttfamily\color{eclipseKeywordColor}\bfseries, 
@@ -84,7 +68,7 @@
 
 \begin{document}
 
-\setcounter{page}{1}      % Das Inhaltsverzeichnis wird römisch numeriert
+\setcounter{page}{1}
 \pagenumbering{roman}
 
 \pagestyle{fancy}
@@ -94,10 +78,7 @@
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyhead[LO]{\bfseries\rightmark}
 \fancyhead[RE]{\bfseries\leftmark}
-%\fancyfoot[LE,RO]{\bfseries \today}
 \fancyfoot[C]{}
-%\fancyfoot[RE]{\bfseries Release Candidate}
-%\renewcommand{\footrulewidth}{0.4pt}
 
 \def\datengerman{\def\today{\ifnum\day<10 0\fi\number\day.\ifnum\month<10 0\fi\number\month.\number\year}}
 
@@ -123,20 +104,14 @@
 }
 {
 \vspace*{3ex}
-
+\pagecolor{titleColor}\afterpage{\nopagecolor}
+\vspace*{8cm}
 \begin{flushleft}
-  \Huge\textbf{\sffamily Hier sind die Simpsons}\\
-  \rule{\linewidth}{5pt}
-  \vspace{1ex}
-  \large\textbf{\sffamily 9. überarbeitete Ausgabe}
+  \Huge\textcolor{blue}{\textbf{\sffamily Hier sind die Simpsons}}\\
+  \textcolor{blue}{\rule{\linewidth}{4pt}}
+  \vspace{2ex}
+  \huge\textcolor{blue}{\textbf{\sffamily 10. überarbeitete Ausgabe (Entwurf)}}
 \end{flushleft}
-
-\vspace*{18cm} 
-
-\begin{flushright}
-  \large\textbf{\sffamily Markus Flingelli\\}
-  \small\sffamily\href{mailto:Markus.Flingelli@gmx.de}{Markus.Flingelli@gmx.de}
-\end{flushright}
 
 \newpage
 }
@@ -155,14 +130,27 @@ Bei der Recherche für dieses Buch bediente ich mich der im Literaturverzeichnis 
 
 \subsection*{}
 \HTMLOutput{
-Memmingen, \today , Markus Flingelli
+Steinheim, \today , Markus Flingelli
 }
 {
-Memmingen, \today \hfill Markus Flingelli
+Steinheim, \today \hfill Markus Flingelli
 }
 
 
 \section*{Änderungshinweise}
+
+\subsection*{Änderungen zur Ausgabe vom 01.04.2016}
+\begin{itemize}
+	\item Einarbeiten der 27. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+	\end{itemize}
+	\item Ergänzungen in folgenden Abschnitten: \ref{Charaktere}, \ref{OttoMan}, \ref{Willie}, \ref{ApuNahasapeemapetilon}, \ref{HansMaulwurf}, \ref{JohnFrink}, \ref{7F02}, \ref{7F18}, \ref{SimpsonsIT}, \ref{ItchyAndScratchy}, \ref{Synchronsprecher} und \ref{Auszeichnungen}.
+\end{itemize}
 
 \subsection*{Änderungen zur Ausgabe vom 15.08.2015}
 \begin{itemize}
@@ -315,5 +303,6 @@ Memmingen, \today \hfill Markus Flingelli
 \printindex
 }
 
+\input{lastpage.tex}
 
 \end{document}
