@@ -1,19 +1,15 @@
-notifications:
-  email: false
-install:
-  - export PATH="$HOME/miniconda/bin:$PATH"
-  - if ! command -v conda > /dev/null; then
-      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
-      bash miniconda.sh -b -p $HOME/miniconda -u;
-      conda config --add channels conda-forge;
-      conda config --set always_yes yes;
-      conda update --all;
-      conda install tectonic;
-    fi
-  - conda info -a
-cache:
-  directories:
-    - $HOME/miniconda
-    - $HOME/.cache/Tectonic
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
- - tectonic ./Simpsons.tex --print
+- pdflatex -interaction=nonstopmode -halt-on-error Simpsons.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: 8d22c1d4d0eadd05b76dec50d8c653ca8c2c5170
+  file:
+  - Simpsons.pdf
+  skip_cleanup: true
+  on:
+tags: false
