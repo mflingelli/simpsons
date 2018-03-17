@@ -8,8 +8,6 @@ script:
 - pdflatex Simpsons.tex
 - pdflatex Simpsons.tex
 - makeindex -g -s header.ist Simpsons.idx
-- rm -f Simpsons.ind
-- mv Simpsons.ind.new Simpsons.ind
 - pdflatex Simpsons.tex
 - pdflatex Simpsons.tex
 deploy:
