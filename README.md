@@ -7,6 +7,6 @@ In diesem Werk sind die wichtigsten Simpsons-Charaktere und alle Episoden aufgef
 
 ## Ältere Ausgaben
 
-* [3. überarbeitete Ausgabe](pdf/simpsons_v3_2010.pdf)
-* [4. überarbeitete Ausgabe](pdf/simpsons_v4_2011.pdf)
-* [5. überarbeitete Ausgabe](pdf/simpsons_v5_2012.pdf)
+* [3. überarbeitete Ausgabe](pdfs/simpsons_v3_2010.pdf)
+* [4. überarbeitete Ausgabe](pdfs/simpsons_v4_2011.pdf)
+* [5. überarbeitete Ausgabe](pdfs/simpsons_v5_2012.pdf)
