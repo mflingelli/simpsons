@@ -1,0 +1,21 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
+script:
+- pdflatex Simpsons.tex
+- bibtex "Simpsons"
+- pdflatex Simpsons.tex
+- pdflatex Simpsons.tex
+- makeindex -g -s header.ist Simpsons.idx
+- pdflatex Simpsons.tex
+- pdflatex Simpsons.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: 8d22c1d4d0eadd05b76dec50d8c653ca8c2c5170
+  file:
+  - Simpsons.pdf
+  skip_cleanup: true
+  on:
+    tags: true
