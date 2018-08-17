@@ -14,8 +14,7 @@ deploy:
   provider: releases
   api_key:
     secure: 8d22c1d4d0eadd05b76dec50d8c653ca8c2c5170
-  file:
-  - Simpsons.pdf
+  file: "Simpsons.pdf"
   skip_cleanup: true
   on:
     tags: true
