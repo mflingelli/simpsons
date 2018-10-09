@@ -13,7 +13,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 8d22c1d4d0eadd05b76dec50d8c653ca8c2c5170
+    secure: af9f65f2621f916c95482d78b3f60f1bad0699fb
   file: "Simpsons.pdf"
   skip_cleanup: true
   on:
