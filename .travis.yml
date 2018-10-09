@@ -12,8 +12,7 @@ script:
 - pdflatex Simpsons.tex
 deploy:
   provider: releases
-  api_key:
-    secure: af9f65f2621f916c95482d78b3f60f1bad0699fb
+  api_key: af9f65f2621f916c95482d78b3f60f1bad0699fb
   file: "Simpsons.pdf"
   skip_cleanup: true
   on:
