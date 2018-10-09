@@ -1,7 +1,8 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
 script:
 - pdflatex Simpsons.tex
 - bibtex "Simpsons"
@@ -12,8 +13,12 @@ script:
 - pdflatex Simpsons.tex
 deploy:
   provider: releases
-  api_key: af9f65f2621f916c95482d78b3f60f1bad0699fb
-  file: "Simpsons.pdf"
+  api_key: 
+    secure: Ewn8zXCQIyVlULIm9fptbyQaxDI0SXlFJ9KHXACZTRnnA8jtUxlmCSlo75b6PUr7WQlaEa+wcrS75GiftcOZSiTTrO3lAOyO8sV8FGS97immZuODYutu62MQycoyFc4i11WbY1T2rKh0TtZFC10Z0eM9pXxVf/LLZzM+RcL4PpnGwnTNqQOBDwyfwAX1ve1UilvCHMUIUjLD7SiIdBhRB+Wv5e9UxRFzZRbz2qZrs1lLy8qdu0U7HoQjVLYqi9O0OI9HQr4luDDhlxLDdPHnLvGTk9nM+opCswraB12FKYjjDxuKFg7j1pzbINIoak8L8HeiWMsgtkdbxOl9Pv/YGXaT9h87IyGGBL7vQyRyl9f4YD7yl3hPzhr7WZQ8Kjq7LVmL79sD5qsGrfnaxBB2p5zA77Rs7J0BmY6srF2bDM7inIpmOZlnvJ4lMg2n+gOE+PFrctKgSQrVvgCaWy6cArfNd0zZrcjTdzPa4Khxef1pbtXNzK9lZxc9/OkGrkB1GYi6mWpYuqCx8pXrqXtoyNS7HKuWV/Fk1sUkhzqe5Hl6X2S+pM3esOizM+LX9KgVAeVVCqMFFHg4rwuNTYWgBNRMFJIcV1LorhJY1Jrhx3SXjDXWlLBm36rKbs1u4rTpJyBjehn+B/OwArLrwQHP4PqLxIyH7GObEIjn2JLNQcQ=
+  file: Simpsons.pdf
   skip_cleanup: true
   on:
     tags: true
+env:
+  global:
+    secure: Ewn8zXCQIyVlULIm9fptbyQaxDI0SXlFJ9KHXACZTRnnA8jtUxlmCSlo75b6PUr7WQlaEa+wcrS75GiftcOZSiTTrO3lAOyO8sV8FGS97immZuODYutu62MQycoyFc4i11WbY1T2rKh0TtZFC10Z0eM9pXxVf/LLZzM+RcL4PpnGwnTNqQOBDwyfwAX1ve1UilvCHMUIUjLD7SiIdBhRB+Wv5e9UxRFzZRbz2qZrs1lLy8qdu0U7HoQjVLYqi9O0OI9HQr4luDDhlxLDdPHnLvGTk9nM+opCswraB12FKYjjDxuKFg7j1pzbINIoak8L8HeiWMsgtkdbxOl9Pv/YGXaT9h87IyGGBL7vQyRyl9f4YD7yl3hPzhr7WZQ8Kjq7LVmL79sD5qsGrfnaxBB2p5zA77Rs7J0BmY6srF2bDM7inIpmOZlnvJ4lMg2n+gOE+PFrctKgSQrVvgCaWy6cArfNd0zZrcjTdzPa4Khxef1pbtXNzK9lZxc9/OkGrkB1GYi6mWpYuqCx8pXrqXtoyNS7HKuWV/Fk1sUkhzqe5Hl6X2S+pM3esOizM+LX9KgVAeVVCqMFFHg4rwuNTYWgBNRMFJIcV1LorhJY1Jrhx3SXjDXWlLBm36rKbs1u4rTpJyBjehn+B/OwArLrwQHP4PqLxIyH7GObEIjn2JLNQcQ=
