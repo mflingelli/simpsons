@@ -10,3 +10,5 @@
 *.toc
 *.bat
 *.gz
+Travis_Setup.txt
+nightly.sh
