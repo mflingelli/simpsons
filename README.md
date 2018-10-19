@@ -4,6 +4,8 @@
 
 In diesem Werk sind die wichtigsten Simpsons-Charaktere und alle Episoden aufgeführt. Darüber hinaus werden die Tafelanschriebe, die Gaststars, die Werbegags, die Itchy & Scratchy Folgen und die Sendetermine tabellarisch aufgelistet.
 
+Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
+
 
 ## Aktuelle stabile Ausgabe
 
@@ -12,7 +14,9 @@ In diesem Werk sind die wichtigsten Simpsons-Charaktere und alle Episoden aufgef
 
 ## Entwurfsausgabe
 
-* [12. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/nightly/Simpsons.pdf)
+Die Entwurfsausgabe spiegelt den aktuellen Stand der 29. Staffel wieder.
+
+* [12. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
