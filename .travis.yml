@@ -17,6 +17,7 @@ deploy:
     secure: U+KwG1oSjqg9l+06kYWEdiq7kwtlLbFmwS5X998qRze/SfAJ8K9RnXLj1Dg7PfF846yfedZ/AD/PR0uc5OEAGvDIwoH+dej4qgxpU0OwBM3ECGVn5n5ct3zBc+Pr3xjW/G+nP2tVE4hexlEFsSngVtaBv11RQFi8g9JdZciQNJRpvJgqRzpUQpnJJ+RGLXfcPNziSePYS5ZR0zumvQCc8geCNk1EtfqmvWcL2RP+ZLNHKlLSV/BlR5mZ83meDn1XZKoAcwAtOru+YfVF5PXLMrkCFhObLUQlVsYH8hURcWTPRyWvZCJccQX8xme1unF8wn/3cAs5jl0fGqxRvWyyMGqLIDcAUH2B7Bv2lJbCcrP+S16jwM1eeK5nmvyIDEdwWPUf+LrWaXYRhnBAoEp/TI0vPdHOjfsKguG9PD6UkX/gVpxUpBBQw9TTlpe7SjJfYCEsR6VNTiCtnai3E+AuNePNRLwmDFzZufCYr9VFSBmJ69j6fanoiT8rBA+KLR+NuKMxJLnysZgN7MaQ186L+gPLt/heL3gLE+b7i5PeqNEhMU/bhwLAT2+BSxaEDAGphPoIpoEuAK+umtv1xRoOHeabDyKYaPCG56ZtAZh1wN+P6LD1tkZGBoPzvKEqqCNLH3jfkfBQdabQRSebUlopA2DbmwsrN/JYy7NCIbGWku4=
   file: Simpsons.pdf
   skip_cleanup: true
+  overwrite: true
   on:
     tags: true
     repo: mflingelli/simpsons
