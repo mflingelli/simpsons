@@ -10,5 +10,7 @@
 *.toc
 *.bat
 *.gz
+*.ilg
+*.ind
 Travis_Setup.txt
 entwurf.sh
