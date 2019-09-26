@@ -13,12 +13,12 @@ script:
 - pdflatex Simpsons.tex
 deploy:
   provider: releases
-  api_key:
-    secure: U+KwG1oSjqg9l+06kYWEdiq7kwtlLbFmwS5X998qRze/SfAJ8K9RnXLj1Dg7PfF846yfedZ/AD/PR0uc5OEAGvDIwoH+dej4qgxpU0OwBM3ECGVn5n5ct3zBc+Pr3xjW/G+nP2tVE4hexlEFsSngVtaBv11RQFi8g9JdZciQNJRpvJgqRzpUQpnJJ+RGLXfcPNziSePYS5ZR0zumvQCc8geCNk1EtfqmvWcL2RP+ZLNHKlLSV/BlR5mZ83meDn1XZKoAcwAtOru+YfVF5PXLMrkCFhObLUQlVsYH8hURcWTPRyWvZCJccQX8xme1unF8wn/3cAs5jl0fGqxRvWyyMGqLIDcAUH2B7Bv2lJbCcrP+S16jwM1eeK5nmvyIDEdwWPUf+LrWaXYRhnBAoEp/TI0vPdHOjfsKguG9PD6UkX/gVpxUpBBQw9TTlpe7SjJfYCEsR6VNTiCtnai3E+AuNePNRLwmDFzZufCYr9VFSBmJ69j6fanoiT8rBA+KLR+NuKMxJLnysZgN7MaQ186L+gPLt/heL3gLE+b7i5PeqNEhMU/bhwLAT2+BSxaEDAGphPoIpoEuAK+umtv1xRoOHeabDyKYaPCG56ZtAZh1wN+P6LD1tkZGBoPzvKEqqCNLH3jfkfBQdabQRSebUlopA2DbmwsrN/JYy7NCIbGWku4=
+  api_key: "$GITHUB_TOKEN"
   file: Simpsons.pdf
-  skip_cleanup: true
-  overwrite: true
   on:
-    tags: true
+    tags : true
     repo: mflingelli/simpsons
     branch: feature/staffel29
+env:
+  global:
+    secure: hvKduDlIAJM6F6m05FEQ6y6CpGUl05mWI8CCl/sIw+Dz4eCEBZENFLwyvtDpiR9NqkV4x+/4rDDvWah/E3u2hes9pLEcONX2YxeZ9Gbtcgq1xRA334vL2fpEwFNxcvBwq1NzLsE0ZqZRhcFDvChJUkx+gOAZWBa0IDG1CtaEwcMgzQCICVy0NgM6UbWncDEODqre2GdXSEUrKPkXJ0tgd4UeBrXYhAIvvCB8dAPi7cl7ne+QJkWs6/zgKy36mSoLYgmjfdptjpUMDrOmJYPi/nud8qj9Ft7+mQ+wiYpvl1jKjFR4wkZ9y7g75H73fNRdGw05kI/2/ehuO+2G9iDF3o5jRNHvgBJEkYYOP5OOcU4HPlQvw4vR3JY73vIvcQR8u0vtlhrfapEh6VLQYxnFKyZ6snBXvKkIvXjr5N4EiBjPeP5QLh9cymNgAk0cf2uTobp0fQH7yKPQZCZFK/Pglbv2V/2GNTyj6bzZtG7Vz47fLIsmfXwN61ylkT6J1NVB+ZP0d08+1jvxQfwWCXxTvfaFihH5B+rOClDVUUVAezV7XECS3CWsL4mAby7B6MAzAaJRDOD/NGqPSUoLrPH5eBW9o4gOiiC9qdqxbJ/UjEl+N5RvLsaQT8IEO+vAAurCecy/oZzSxQGhsdWrjIDsbHjbVcDwu/0R4H5VojZCeEY=
