@@ -16,7 +16,7 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 Die Entwurfsausgabe spiegelt den aktuellen Stand der 29. Staffel wieder.
 
-* [12. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
+* [12. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/v12.0-Entwurf/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
