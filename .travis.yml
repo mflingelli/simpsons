@@ -23,7 +23,7 @@ deploy:
   on:
     tags: true
     repo: mflingelli/simpsons
-    branch: feature/staffel29
+    branch: development
 env:
   global:
   - secure: QSuQnS58QGLvE9zzkqw4Ls8aRV+c4I9OsBrlfJB5UyafEdO7cAGRqakrsflrp3OxMeq6tl5AUklDbhQPumbN65feQEYv9AcCDEYX/e1z2jDEVu6zNdqOO58I3BdzOVXkPTT9ODmDqjmG1X5BnYm3bGPtZzJmLia+miw/ncg/KK5uaGkA9qFZW76vQ8qHJQptiNV7Tm7AUeknK3hDEQwDgjBnurqZl490ohyuqEk7twQS3krLq8+v6mKVqckEQLgb+2QiDDbtVECaA/cqs+koiFuFUpEJQDyBfvmgvubjd9Ag1jMmFGVRhyx2XjUolWcEmr9Aeho8c8zs2nPPFYzKYTSSXCtSpLpH1GLfJJFPznHA2cXhuY9OZBVRzKqy8/RvJdU3BFcYmFjiJjndw1R/TmM+ua/41WzEK9KaLTzxRLutBzNWi2RnoH04GJWErtGLWMYkpThUplW4kKX9UaFflpQ6x1AFqD5e1cF455J1fvOktcpmN+Cxln1O24Kerg25EE8MLTSuX+qzPPsF1v6zb+nxGw9MsUqLxqt03ywJ0XgJmQFhXxM/gxJYEDTovgyWSce8y7tc2ghI8oXzx/SZ8iidAIeX4es6kC273+u9nAPE0iW37oWSMQhd84WvHY1CbmVHy/OxDwPi7B7o6YcXxbjUPYl4QhPafoQMCf+YVuY=
