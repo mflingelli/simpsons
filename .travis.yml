@@ -1,7 +1,9 @@
 sudo: required
-dist: trusty
+language: ruby
+dist: xenial
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
 script:
 - pdflatex Simpsons.tex
 - bibtex "Simpsons"
@@ -13,9 +15,15 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 8d22c1d4d0eadd05b76dec50d8c653ca8c2c5170
-  file:
-  - Simpsons.pdf
+    secure: m07GgaJBNcS3Ptd9Czw8d7SR6AO+uM68Fg6IAOFWU/U9gC8F2V/MSBMSnR04i75+10/UNjn+xm63TB9n5jt3937w87GCDK1vwRB0i8528+bbWZI+ZdvJ2h0gCdgJxSSVOz/vfODiUYn0CFo2lSh8BfUo40EgHQtPsIyC5Tcxtgxzgj2t/OpGf5yQOQeAr9w7j2uT1gXc8EP6Hz0fWxQ+ygwMKOeBdq0ebfMN8jefImxYS0spZenJBDORxwkdBAltOIlvik9cvS/KMyeWI2n3ncMn3Ad3OPwxZOKUU7Sns0cTy8QZp14FK7wvGWt+ibTEAHYXo9u4ZUuwru8y16UKpAwm6N/VYCZD1f/6BiiSrhGER0X6XarBBMknl298XMiARJoqgoWZ2ha19bgTXNQxhtMn5TePXRFfj18+EaSKr6oKwpEOUVUPPS/NWhZkhskEs28mV/FHnvJ2HGIujsOBot7c1AgoumaNrz2pWpu0AezFp5xH7X7zu3Jxmlq26jKK+Y85N3uAz9UN+4zSRVGeD50398qUht1/e6tCwwMo/J6RylLPT0i1TACVKb5aGQ3M8bXtwbV3qMktFhdVoHcxbM4Za30MESD2Zqzf2vH1L+aQWSGg/mRMcTc/KC3mTLd/v0MJ5LvvcQ9sfjElL3QPW1VIxgfC1EXObrUnoS7tx5Q=
+  file: Simpsons.pdf
   skip_cleanup: true
+  draft: false
+  overwrite: true
   on:
     tags: true
+    repo: mflingelli/simpsons
+    branch: development
+env:
+  global:
+  - secure: QSuQnS58QGLvE9zzkqw4Ls8aRV+c4I9OsBrlfJB5UyafEdO7cAGRqakrsflrp3OxMeq6tl5AUklDbhQPumbN65feQEYv9AcCDEYX/e1z2jDEVu6zNdqOO58I3BdzOVXkPTT9ODmDqjmG1X5BnYm3bGPtZzJmLia+miw/ncg/KK5uaGkA9qFZW76vQ8qHJQptiNV7Tm7AUeknK3hDEQwDgjBnurqZl490ohyuqEk7twQS3krLq8+v6mKVqckEQLgb+2QiDDbtVECaA/cqs+koiFuFUpEJQDyBfvmgvubjd9Ag1jMmFGVRhyx2XjUolWcEmr9Aeho8c8zs2nPPFYzKYTSSXCtSpLpH1GLfJJFPznHA2cXhuY9OZBVRzKqy8/RvJdU3BFcYmFjiJjndw1R/TmM+ua/41WzEK9KaLTzxRLutBzNWi2RnoH04GJWErtGLWMYkpThUplW4kKX9UaFflpQ6x1AFqD5e1cF455J1fvOktcpmN+Cxln1O24Kerg25EE8MLTSuX+qzPPsF1v6zb+nxGw9MsUqLxqt03ywJ0XgJmQFhXxM/gxJYEDTovgyWSce8y7tc2ghI8oXzx/SZ8iidAIeX4es6kC273+u9nAPE0iW37oWSMQhd84WvHY1CbmVHy/OxDwPi7B7o6YcXxbjUPYl4QhPafoQMCf+YVuY=
