@@ -12,9 +12,16 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 * [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
 
 
+## Entwurfsausgabe
+
+Die Entwurfsausgabe spiegelt den aktuellen Stand der 30. Staffel wieder.
+
+* [13. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/v13.0-Entwurf/Simpsons.pdf)
+
+
 ## Ältere Ausgaben
 
 * [11. überarbeitete Ausgabe](pdfs/simpsons_v11_2018.pdf)
-* [3. überarbeitete Ausgabe](pdfs/simpsons_v3_2010.pdf)
-* [4. überarbeitete Ausgabe](pdfs/simpsons_v4_2011.pdf)
 * [5. überarbeitete Ausgabe](pdfs/simpsons_v5_2012.pdf)
+* [4. überarbeitete Ausgabe](pdfs/simpsons_v4_2011.pdf)
+* [3. überarbeitete Ausgabe](pdfs/simpsons_v3_2010.pdf)
