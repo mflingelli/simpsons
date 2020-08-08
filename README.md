@@ -11,6 +11,12 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 * [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
 
+## Entwurfsausgabe
+
+Die Entwurfsausgabe spiegelt den aktuellen Stand der 31. Staffel wieder.
+
+* [14. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/v14.0-Entwurf/Simpsons.pdf)
+
 
 ## Ältere Ausgaben
 
