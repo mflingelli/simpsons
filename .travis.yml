@@ -21,6 +21,7 @@ deploy:
   draft: false
   prerelease: true
   overwrite: true
+  skip_cleanup: true
   on:
     tags: true
     repo: mflingelli/simpsons
