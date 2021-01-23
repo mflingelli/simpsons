@@ -9,11 +9,12 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 ## Aktuelle stabile Ausgabe
 
-* [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
+* [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
 
+* [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
 * [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
 * [11. überarbeitete Ausgabe](pdfs/simpsons_v11_2018.pdf)
 * [5. überarbeitete Ausgabe](pdfs/simpsons_v5_2012.pdf)
