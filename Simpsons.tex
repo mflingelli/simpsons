@@ -19,18 +19,26 @@
 \usepackage{alltt}
 \usepackage{afterpage}
 \usepackage{scrextend}
-\usepackage[]{draftwatermark}
 \usepackage{etoolbox}
 \appto\UrlBreaks{\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
 \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w
 \do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K
 \do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\X\do\Z}
 
+\usepackage{ifthen}
+\newboolean{entwurf}
+\setboolean{entwurf}{true}
+
 \input{definitionen}
 
+\ifthenelse{\boolean{entwurf}}
+{
+\usepackage[]{draftwatermark}
 \SetWatermarkText{Entwurf}
 \SetWatermarkLightness{.95}
 \SetWatermarkScale{5}
+}
+{}
 
 \newcommand{\staffelAnzahl}{32}
 \newcommand{\episodenAnzahl}{706}
@@ -47,9 +55,7 @@
 
 
 \newcommand{\notiz}[1]{
-\vspace{.3cm}
-\textbf{Notiz: }~\emph{#1}
-}
+\vspace{.3cm}\textbf{Notiz: }~\emph{#1}}
 
 \newcommand{\kommentar}[1]{
 %#1
