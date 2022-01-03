@@ -9,17 +9,12 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 ## Aktuelle stabile Ausgabe
 
-* [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
-
-## Entwurfsausgabe
-
-Die Entwurfsausgabe spiegelt den aktuellen Stand der 32. Staffel wieder.
-
-* [15. überarbeitete Ausgabe (Entwurf)](https://github.com/mflingelli/simpsons/releases/download/v15.0-Entwurf/Simpsons.pdf)
+* [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
 
+* [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
 * [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
 * [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
 * [11. überarbeitete Ausgabe](pdfs/simpsons_v11_2018.pdf)
