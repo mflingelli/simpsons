@@ -19,21 +19,29 @@
 \usepackage{alltt}
 \usepackage{afterpage}
 \usepackage{scrextend}
-%\usepackage[]{draftwatermark}
 \usepackage{etoolbox}
 \appto\UrlBreaks{\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
 \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w
 \do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K
 \do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\X\do\Z}
 
+\usepackage{ifthen}
+\newboolean{entwurf}
+\setboolean{entwurf}{false}
+
 \input{definitionen}
 
-%\SetWatermarkText{Entwurf}
-%\SetWatermarkLightness{.95}
-%\SetWatermarkScale{5}
+\ifthenelse{\boolean{entwurf}}
+{
+\usepackage[]{draftwatermark}
+\SetWatermarkText{Entwurf}
+\SetWatermarkLightness{.95}
+\SetWatermarkScale{5}
+}
+{}
 
-\newcommand{\staffelAnzahl}{31}
-\newcommand{\episodenAnzahl}{684}
+\newcommand{\staffelAnzahl}{32}
+\newcommand{\episodenAnzahl}{706}
 \newcommand{\emmyAnzahl}{31}
 
 \makeindex
@@ -47,9 +55,7 @@
 
 
 \newcommand{\notiz}[1]{
-\vspace{.3cm}
-\textbf{Notiz: }~\emph{#1}
-}
+\vspace{.3cm}\textbf{Notiz: }~\emph{#1}}
 
 \newcommand{\kommentar}[1]{
 %#1
@@ -119,7 +125,7 @@
   \Huge\textcolor{blue}{\textbf{\sffamily Hier sind die Simpsons}}\\
   \textcolor{blue}{\rule{\linewidth}{4pt}}
   \vspace{2ex}
-  \huge\textcolor{blue}{\textbf{\sffamily 14. überarbeitete Ausgabe}}
+  \huge\textcolor{blue}{\textbf{\sffamily 15. überarbeitete Ausgabe}}
 \end{flushleft}
 
 \newpage
@@ -147,6 +153,19 @@ Steinheim, \today \hfill Markus Flingelli
 
 
 \section*{Änderungshinweise}
+
+\subsection*{Änderungen zur Ausgabe vom 23.01.2021}
+\begin{itemize}
+	\item Einarbeiten der 32. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+		\item Ergänzungen in folgenden Abschnitten: \ref{Charaktere}, \ref{MaggieSimpson}, \ref{CMBurns}, \ref{ToddFlanders}, \ref{ChiefWiggum}, \ref{JuliusHibbert}, \ref{ApuNahasapeemapetilon}, \ref{GilGunderson}, \ref{MilhouseVanHouten}, \ref{CletusSpuckler}, \ref{Snake}, \ref{LindseyNaegle}, \ref{LionelHutz}, \ref{Tatum}, \ref{7F01}, \ref{7F13}, \ref{7F14}, \ref{7F16}, \ref{7F20}, \ref{7F22}, \ref{8F03}, \ref{8F04}, \ref{8F07}, \ref{8F08}, \ref{1F02}, \ref{1F03}, \ref{1F19}, \ref{2F02}, \ref{2F13}, \ref{5F19}, \ref{5F20}, \ref{5F22}, \ref{AABF03}, \ref{AABF05}, \ref{BABF07}, \ref{DABF14}, \ref{DABF20}, \ref{DABF22}, \ref{EABF03}, \ref{EABF07}, \ref{EABF08}, \ref{GABF06}, \ref{KABF04}, \ref{KABF17}, \ref{KABF20}, \ref{LABF17}, \ref{MABF09}, \ref{PABF20}, \ref{RABF04}, \ref{RABF11}, \ref{SABF01}, \ref{SABF12}, \ref{TABF03}, \ref{TABF09}, \ref{VABF03}, \ref{VABF17}, \ref{YABF02}, \ref{YABF18}, \ref{YABF17}, \ref{YABF13}, \ref{ZABF16}, \ref{Vorhersagen}, \ref{sec:staffel-31}, \ref{Synchronsprecher} und \ref{Auszeichnungen}.
+	\end{itemize}
+\end{itemize}
 
 \subsection*{Änderungen zur Ausgabe vom 08.08.2020}
 \begin{itemize}
