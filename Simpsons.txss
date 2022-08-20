@@ -1,9 +1,9 @@
 [Session]
 FileVersion=1
 File0\FileName=Simpsons.tex
-File0\Line=159
-File0\Col=274
-File0\FirstLine=154
+File0\Line=165
+File0\Col=50
+File0\FirstLine=145
 File0\FoldedLines=
 MasterFile=
 CurrentFile=Simpsons.tex
@@ -13,6 +13,21 @@ File1\Line=1423
 File1\Col=193
 File1\FirstLine=0
 File1\FoldedLines=
+File2\FileName=Anhang/Anhang.tex
+File2\Line=0
+File2\Col=0
+File2\FirstLine=0
+File2\FoldedLines=
+File3\FileName=Kapitel1/Kapitel1.tex
+File3\Line=879
+File3\Col=0
+File3\FirstLine=0
+File3\FoldedLines=
+File4\FileName=Simpsons.bib
+File4\Line=637
+File4\Col=13
+File4\FirstLine=0
+File4\FoldedLines=
 
 [InternalPDFViewer]
 File=Simpsons.pdf
