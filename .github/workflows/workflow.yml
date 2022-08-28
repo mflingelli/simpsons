@@ -4,16 +4,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: xu-cheng/texlive-action/full@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: TexLive compilation
+        uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
-            pdflatex Simpsons.tex
+            pdflatex Simpsons.tex > /dev/null 2>&1
             bibtex Simpsons
-            pdflatex Simpsons.tex
-            pdflatex Simpsons.tex
+            pdflatex Simpsons.tex > /dev/null 2>&1
+            pdflatex Simpsons.tex > /dev/null 2>&1
             makeindex -g -s header.ist Simpsons.idx
-            pdflatex Simpsons.tex
-            pdflatex Simpsons.tex
+            pdflatex Simpsons.tex > /dev/null 2>&1
+            pdflatex Simpsons.tex > /dev/null 2>&1
+      - name: Upload ZIP archive
+        uses: actions/upload-artifact@v2
+        with:
+          name: Simpsons
+          path: Simpsons.pdf
 
 
