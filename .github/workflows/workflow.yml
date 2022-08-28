@@ -12,13 +12,13 @@ jobs:
           sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
       - name: LaTeX compilation
         run: |
-          pdflatex Simpsons.tex > /dev/null 2>&1
+          pdflatex Simpsons.tex
           bibtex Simpsons
-          pdflatex Simpsons.tex > /dev/null 2>&1
-          pdflatex Simpsons.tex > /dev/null 2>&1
+          pdflatex Simpsons.tex
+          pdflatex Simpsons.tex
           makeindex -g -s header.ist Simpsons.idx
-          pdflatex Simpsons.tex > /dev/null 2>&1
-          pdflatex Simpsons.tex > /dev/null 2>&1
+          pdflatex Simpsons.tex
+          pdflatex Simpsons.tex
       - name: Draft release
         uses: softprops/action-gh-release@v1
         with:
