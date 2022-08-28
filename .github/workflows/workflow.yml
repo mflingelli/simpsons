@@ -1,22 +1,19 @@
-name: Build Simpsons
+name: Build Simpsons file
 on: [push]
 jobs:
   build:
-    env:
-      DIR: .
-      FILE: Simpsons
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
-            pdflatex ${{ env.FILE }}
-            bibtex ${{ env.FILE }
-            pdflatex ${{ env.FILE }}
-            pdflatex ${{ env.FILE }}
-            makeindex -g -s header.ist ${{ env.FILE }}.idx
-            pdflatex ${{ env.FILE }}
-            pdflatex ${{ env.FILE }};
+            pdflatex Simpsons.tex
+            bibtex Simpsons
+            pdflatex Simpsons.tex
+            pdflatex Simpsons.tex
+            makeindex -g -s header.ist Simpsons.idx
+            pdflatex Simpsons.tex
+            pdflatex Simpsons.tex
 
 
