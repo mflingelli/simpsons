@@ -10,6 +10,12 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 * [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
 
+## Entwurf
+
+Die aktuell in Bearbeitung befindliche Ausgabe kann als Entwurf betrachtet werden:
+
+* [Entwurf 16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
+
 
 ## Ältere Ausgaben
 
