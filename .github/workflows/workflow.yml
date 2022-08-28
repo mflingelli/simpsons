@@ -19,10 +19,18 @@ jobs:
           makeindex -g -s header.ist Simpsons.idx
           pdflatex Simpsons.tex
           pdflatex Simpsons.tex
-      - name: Draft release
+      - name: Generate pre-release tag
+          id: tag
+          run: |
+            echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
+      - name: Provide pre-release
         uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: true
-          files: Simpsons.pdf
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: |
+            Simpsons.pdf
 
 
