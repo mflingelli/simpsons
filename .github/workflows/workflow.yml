@@ -24,7 +24,6 @@ jobs:
           path: Simpsons.pdf
       - name: Draft release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           draft: true
           files: Simpsons.pdf
