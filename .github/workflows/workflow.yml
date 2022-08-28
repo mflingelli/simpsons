@@ -2,23 +2,21 @@ name: Build Simpsons
 on: [push]
 jobs:
   build:
-    runs-on: xenial
     env:
       DIR: .
       FILE: Simpsons
+    runs-on: 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Install TeXlive
-        run: sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german
-      - name: LaTeX compile
-        working-directory: ${{ env.DIR }}
-        run: pdflatex ${{ env.FILE }}; bibtex ${{ env.FILE }}; pdflatex ${{ env.FILE }}; pdflatex ${{ env.FILE }}; makeindex -g -s header.ist ${{ env.FILE }}.idx; pdflatex ${{ env.FILE }}; pdflatex ${{ env.FILE }};
-      - name: Moving created PDF file
-        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
-      - name: Upload pdf as artifact
-        uses: actions/upload-artifact@v2
+      - uses: actions/checkout@v2
+      - uses: xu-cheng/texlive-action/full@v1
         with:
-          name: ${{ env.FILE }}.pdf
-          path: ./github_artifacts
+          run: |
+            pdflatex ${{ env.FILE }}
+            bibtex ${{ env.FILE }
+            pdflatex ${{ env.FILE }}
+            pdflatex ${{ env.FILE }}
+            makeindex -g -s header.ist ${{ env.FILE }}.idx
+            pdflatex ${{ env.FILE }}
+            pdflatex ${{ env.FILE }};
+
 
