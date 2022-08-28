@@ -4,25 +4,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DIR: target
+      DIR: .
       FILE: Simpsons
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
       - name: Install TeXlive
         run: sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
       - name: LaTeX compile
         working-directory: ${{ env.DIR }}
         run: pdflatex ${{ env.FILE }}; bibtex ${{ env.FILE }}; pdflatex ${{ env.FILE }}; pdflatex ${{ env.FILE }}; makeindex -g -s header.ist ${{ env.FILE }}.idx; pdflatex ${{ env.FILE }}; pdflatex ${{ env.FILE }};
-      - name: move
+      - name: Moving created PDF file
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
       - name: Upload pdf as artifact
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.FILE }}.pdf
           path: ./github_artifacts
-      - name: Upload pdf as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ env.FILE }}.pdf
-          path: ./github_artifacts
+
