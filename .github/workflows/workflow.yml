@@ -20,7 +20,6 @@ jobs:
           pdflatex Simpsons.tex
           pdflatex Simpsons.tex
       - name: Generate pre-release tag
-          id: tag
           run: |
             echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
       - name: Provide pre-release
