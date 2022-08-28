@@ -22,7 +22,7 @@ jobs:
       - name: Draft release
         uses: softprops/action-gh-release@v1
         with:
-          draft: true
+          prerelease: true
           files: Simpsons.pdf
 
 
