@@ -13,7 +13,7 @@
 \usepackage[a4paper,head=2cm,bottom=2cm,left=25mm,right=25mm]{geometry}
 \usepackage{babel}
 \usepackage{makeidx}
-\usepackage{fancyhdr}
+\usepackage{scrlayer-scrpage}
 \usepackage[latin1]{inputenc}
 \usepackage{graphics, graphicx}
 \usepackage{longtable} 
@@ -95,14 +95,14 @@
 \setcounter{page}{1}
 \pagenumbering{roman}
 
-\pagestyle{fancy}
+\pagestyle{scrheadings}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[LE,RO]{\bfseries\thepage}
-\fancyhead[LO]{\bfseries\rightmark}
-\fancyhead[RE]{\bfseries\leftmark}
-\fancyfoot[C]{}
+\lehead{\bfseries\thepage}
+\rohead{\bfseries\thepage}
+\lohead{\bfseries\rightmark}
+\rehead{\bfseries\leftmark}
+\ofoot{}
 
 \def\datengerman{\def\today{\ifnum\day<10 0\fi\number\day.\ifnum\month<10 0\fi\number\month.\number\year}}
 
