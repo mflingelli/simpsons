@@ -22,13 +22,13 @@ jobs:
       - name: Generate pre-release tag
         id: tag
         run: |
-          echo "RELEASE_TAG=Entwurf" >> $GITHUB_OUTPUT
+          echo "RELEASE_TAG=Entwurf" >> $GITHUB_ENV
       - name: Provide pre-release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: true
-          tag_name: ${{ outputs.RELEASE_TAG }}
+          tag_name: ${{ env.RELEASE_TAG }}
           files: |
             Simpsons.pdf
