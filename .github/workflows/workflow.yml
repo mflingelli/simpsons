@@ -22,7 +22,7 @@ jobs:
       - name: Generate pre-release tag
         id: tag
         run: |
-          echo "::set-output name=release_tag::Entwurf"
+          echo "{release_tag}={Entwurf}" >> $GITHUB_OUTPUT
       - name: Provide pre-release
         uses: softprops/action-gh-release@v1
         env:
