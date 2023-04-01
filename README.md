@@ -6,19 +6,14 @@ In diesem Werk sind die wichtigsten Simpsons-Charaktere und alle Episoden aufgef
 Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 
-## Aktuelle stabile Ausgabe
+## Aktuelle Ausgabe
 
-* [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
-
-## Entwurf
-
-Die aktuell in Bearbeitung befindliche Ausgabe kann als Entwurf betrachtet werden:
-
-* [Entwurf 16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
+* [16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v16.0/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
 
+* [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
 * [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
 * [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
 * [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
