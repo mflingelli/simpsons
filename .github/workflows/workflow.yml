@@ -1,0 +1,34 @@
+name: Hier sind die Simpsons
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: TeXLive installation
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-german texlive-plain-generic
+      - name: LaTeX compilation
+        run: |
+          pdflatex Simpsons.tex
+          bibtex Simpsons
+          pdflatex Simpsons.tex
+          pdflatex Simpsons.tex
+          makeindex -g -s header.ist Simpsons.idx
+          pdflatex Simpsons.tex
+          pdflatex Simpsons.tex
+      - name: Generate pre-release tag
+        id: tag
+        run: |
+          echo "RELEASE_TAG=Entwurf" >> $GITHUB_ENV
+      - name: Provide pre-release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          prerelease: true
+          tag_name: ${{ env.RELEASE_TAG }}
+          files: |
+            Simpsons.pdf

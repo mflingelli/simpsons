@@ -1,6 +1,5 @@
-# Hier sind die Simpsons #
-
-[![Build Status](https://travis-ci.com/mflingelli/simpsons.svg?branch=development)](https://app.travis-ci.com/github/mflingelli/simpsons)
+# Hier sind die Simpsons
+![Build-Status](https://github.com/mflingelli/simpsons/actions/workflows/workflow.yml/badge.svg)
 
 In diesem Werk sind die wichtigsten Simpsons-Charaktere und alle Episoden aufgeführt. Darüber hinaus werden die Tafelanschriebe, die Gaststars, die Werbegags, die Itchy & Scratchy Folgen und die Sendetermine tabellarisch aufgelistet.
 
@@ -10,6 +9,12 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 ## Aktuelle stabile Ausgabe
 
 * [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
+
+## Entwurf
+
+Die aktuell in Bearbeitung befindliche Ausgabe kann als Entwurf betrachtet werden:
+
+* [Entwurf 16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
 
 
 ## Ältere Ausgaben

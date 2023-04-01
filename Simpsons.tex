@@ -1,10 +1,19 @@
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-\documentclass[pagesize,german]{scrbook}
+\documentclass[pagesize,twoside,german]{scrbook}
+\makeatletter
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\makeatother
 \usepackage[a4paper,head=2cm,bottom=2cm,left=25mm,right=25mm]{geometry}
 \usepackage{babel}
 \usepackage{makeidx}
-\usepackage{fancyhdr}
+\usepackage[headsepline]{scrlayer-scrpage}
 \usepackage[latin1]{inputenc}
 \usepackage{graphics, graphicx}
 \usepackage{longtable} 
@@ -16,7 +25,6 @@
 \usepackage{quotchap}
 \usepackage{listings}
 \usepackage{soul}
-\usepackage{alltt}
 \usepackage{afterpage}
 \usepackage{scrextend}
 \usepackage{etoolbox}
@@ -27,7 +35,7 @@
 
 \usepackage{ifthen}
 \newboolean{entwurf}
-\setboolean{entwurf}{false}
+\setboolean{entwurf}{true}
 
 \input{definitionen}
 
@@ -40,9 +48,9 @@
 }
 {}
 
-\newcommand{\staffelAnzahl}{32}
-\newcommand{\episodenAnzahl}{706}
-\newcommand{\emmyAnzahl}{31}
+\newcommand{\staffelAnzahl}{33}
+\newcommand{\episodenAnzahl}{728}
+\newcommand{\emmyAnzahl}{35}
 
 \makeindex
 
@@ -81,19 +89,12 @@
 	language=C
 }
 
+\pagestyle{scrheadings}
+
 \begin{document}
 
 \setcounter{page}{1}
 \pagenumbering{roman}
-
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-\fancyhf{}
-\fancyhead[LE,RO]{\bfseries\thepage}
-\fancyhead[LO]{\bfseries\rightmark}
-\fancyhead[RE]{\bfseries\leftmark}
-\fancyfoot[C]{}
 
 \def\datengerman{\def\today{\ifnum\day<10 0\fi\number\day.\ifnum\month<10 0\fi\number\month.\number\year}}
 
@@ -125,7 +126,7 @@
   \Huge\textcolor{blue}{\textbf{\sffamily Hier sind die Simpsons}}\\
   \textcolor{blue}{\rule{\linewidth}{4pt}}
   \vspace{2ex}
-  \huge\textcolor{blue}{\textbf{\sffamily 15. überarbeitete Ausgabe}}
+  \huge\textcolor{blue}{\textbf{\sffamily 16. überarbeitete Ausgabe}}
 \end{flushleft}
 
 \newpage
@@ -153,6 +154,19 @@ Steinheim, \today \hfill Markus Flingelli
 
 
 \section*{Änderungshinweise}
+
+\subsection*{Änderungen zur Ausgabe vom 03.01.2022}
+\begin{itemize}
+	\item Einarbeiten der 33. Staffel in
+	\begin{itemize}
+		\item Episodenführer
+		\item Staffelübersicht
+		\item Tafelanschriebe
+		\item Gaststars
+		\item Werbegags
+		\item Ergänzungen in folgenden Abschnitten: \ref{Charaktere}, \ref{WaylonSmithers}, \ref{DolphStarbeam}, \ref{Hummelmann}, \ref{ZahnfleischbluterMurphy}, \ref{CletusSpuckler}, \ref{HerkunftNamen}, \ref{7F01}, \ref{7F04}, \ref{7F22}, \ref{8F05}, \ref{8F13}, \ref{9F10}, \ref{9F11}, \ref{9F20}, \ref{1F22}, \ref{2F03}, \ref{2F23}, \ref{3F04}, \ref{3F18}, \ref{5F01}, \ref{5F03}, \ref{5F06}, \ref{BABF21}, \ref{DABF17}, \ref{MABF18}, \ref{NABF17}, \ref{RABF07}, \ref{SABF04}, \ref{SABF03}, \ref{WABF15}, \ref{ZABF09}, \ref{ExistiertSpringfield}, \ref{Vorhersagen}, \ref{Synchronsprecher} und \ref{Auszeichnungen}.
+	\end{itemize}
+\end{itemize}
 
 \subsection*{Änderungen zur Ausgabe vom 23.01.2021}
 \begin{itemize}
