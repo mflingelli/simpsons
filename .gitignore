@@ -16,3 +16,4 @@ Travis_Setup.txt
 entwurf.sh
 **/*.bak
 release*.sh
+*.txss2
