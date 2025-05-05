@@ -8,24 +8,19 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 ## Aktuelle Ausgabe
 
-* [17. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v17.0/Simpsons.pdf)
+- [18. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v18.0/Simpsons.pdf)
 
-
-## Entwurf
-
-Die aktuell in Bearbeitung befindliche Ausgabe kann als Entwurf betrachtet werden:
-
-* [Entwurf 18. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
 
 
 ## Ältere Ausgaben
 
-* [16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v16.0/Simpsons.pdf)
-* [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
-* [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
-* [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
-* [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
-* [11. überarbeitete Ausgabe](pdfs/simpsons_v11_2018.pdf)
-* [5. überarbeitete Ausgabe](pdfs/simpsons_v5_2012.pdf)
-* [4. überarbeitete Ausgabe](pdfs/simpsons_v4_2011.pdf)
-* [3. überarbeitete Ausgabe](pdfs/simpsons_v3_2010.pdf)
+- [17. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v17.0/Simpsons.pdf)
+- [16. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v16.0/Simpsons.pdf)
+- [15. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v15.0/Simpsons.pdf)
+- [14. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v14.0/Simpsons.pdf)
+- [13. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v13.0/Simpsons.pdf)
+- [12. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v12.0/Simpsons.pdf)
+- [11. überarbeitete Ausgabe](pdfs/simpsons_v11_2018.pdf)
+- [5. überarbeitete Ausgabe](pdfs/simpsons_v5_2012.pdf)
+- [4. überarbeitete Ausgabe](pdfs/simpsons_v4_2011.pdf)
+- [3. überarbeitete Ausgabe](pdfs/simpsons_v3_2010.pdf)
