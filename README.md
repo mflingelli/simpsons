@@ -8,7 +8,14 @@ Dieses Werk erhebt keinen Anspruch auf Vollständigkeit.
 
 ## Aktuelle Ausgabe
 
-- [18. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v18.0/Simpsons.pdf)
+* [18. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/v18.0/Simpsons.pdf)
+
+
+## Entwurf
+
+Die aktuell in Bearbeitung befindliche Ausgabe kann als Entwurf betrachtet werden:
+
+* [Entwurf 19. überarbeitete Ausgabe](https://github.com/mflingelli/simpsons/releases/download/Entwurf/Simpsons.pdf)
 
 
 
